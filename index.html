@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NOTE APP</title>
+</head>
+<body>
+    <div id="notes-container">
+        <div id="header">
+            <h1>NOTES TAKING APP</h1>
+            <button id="SearchBtn" onclick="searchNotes()">Search</button>
+        </div>
+        <textarea id="new-note" placeholder="Type your note"></textarea>
+        <button id="AddNoteBtn" onclick="addNote()">Add Note</button>
+        <button id="DeleteAllBtn" onclick="deleteAllNotes()">Delete All Notes</button>
+        <div id="notes-list"></div>
+        <div id="full-content-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

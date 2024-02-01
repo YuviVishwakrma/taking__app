@@ -1,0 +1,182 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* width: 100%; */
+           
+        }
+
+        #notes-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: lightskyblue;
+            /* background-image: url(OIP.jpg); */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            flex-direction: column;
+            overflow: auto;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        #notes-list {
+            margin-bottom: 15px;
+            overflow: auto;
+            
+        }
+        #new-note{
+            width: 100%;
+            height: 200px;
+            font-size: xx-large;
+        }
+        button#SearchBtn {
+            width: 20%;
+            padding: 10px;
+            background-color: lightgreen;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button#SearchBtn:hover {
+            background-color: #2980b9;
+        }
+        .note {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            
+        }
+
+        .note button {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #Deleteid {
+            width: 10%;
+            background-color: #e74c3c;
+            color: #fff;
+            right: 10%;
+            position: absolute;
+        }
+ 
+
+       .read-btn {
+          width: 10%;
+          background-color: black;
+          color: #fff;
+          right: 20%;
+          position: absolute;
+        }
+
+
+
+
+        #Editid {
+            width: 10%;
+            background-color: blue;
+            color: #fff;
+            right: 0;
+            position: absolute;
+        }
+
+        textarea {
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button#AddNoteBtn {
+            width: 30%;
+            padding: 15px;
+            background-color: blue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button#AddNoteBtn:hover {
+            background-color: black;
+        }
+        button#DeleteAllBtn {
+            width: 30%;
+            padding: 15px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button#DeleteAllBtn:hover {
+            background-color: black;
+        }
+      
+        .note {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-height: 100px; /* Set a maximum height for each note */
+        overflow: hidden; /* Hide overflowing content */
+        cursor: pointer; /* Add cursor pointer for indicating clickability */
+        transition: max-height 0.3s ease; /* Add smooth transition effect */
+    }
+ .note.expanded {
+        max-height: none; /* Remove the max-height limit when expanded */
+    }
+
+    #notes-list {
+        margin-bottom: 15px;
+        overflow: auto;
+        max-height: 500px; /* Set a maximum height for the notes container */
+    }
+    #full-content-container {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 95%;
+        overflow: auto;
+    }
+
+    .full-note {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
